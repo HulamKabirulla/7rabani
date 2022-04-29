@@ -39,7 +39,8 @@ class NovaposhtaController extends Controller
         /*array_push($DocumentList3, $DocumentList);
         array_push($DocumentList3, $DocumentList2);*/
         header('Content-Type: application/json; charset=utf-8');
-        $data = ["apiKey" => "9911c50e77acd5aeafaeba1af3a719d3", "modelName" => "TrackingDocument", "calledMethod" => "getStatusDocuments",
+	    //API KEY!!!!!!!!!!!
+        $data = ["apiKey" => "", "modelName" => "TrackingDocument", "calledMethod" => "getStatusDocuments",
     "methodProperties" => [
         "Documents" => 
            $DocumentList3
