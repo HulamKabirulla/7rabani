@@ -118,7 +118,7 @@ class NovaposhtaController extends Controller
     {
         
         $DocRef=$request->DocRef;
-        $data = ["apiKey" => "9911c50e77acd5aeafaeba1af3a719d3", "modelName" => "InternetDocument", "calledMethod" => "delete",
+        $data = ["apiKey" => "", "modelName" => "InternetDocument", "calledMethod" => "delete",
     "methodProperties" => [
         "DocumentRefs" => $DocRef
     ]];
@@ -186,7 +186,7 @@ class NovaposhtaController extends Controller
         $OptionsSeat = str_replace("{", "[", $OptionsSeat);
         $OptionsSeat = str_replace("}", "]", $OptionsSeat);
         $OptionsSeat = json_decode($OptionsSeat);
-        $data = ["apiKey" => "9911c50e77acd5aeafaeba1af3a719d3", "modelName" => "InternetDocument", "calledMethod" => "save",
+        $data = ["apiKey" => "", "modelName" => "InternetDocument", "calledMethod" => "save",
     "methodProperties" => [
         "NewAddress" => "1",
         "PayerType" => "Recipient",
@@ -260,9 +260,9 @@ class NovaposhtaController extends Controller
     {
         $searchCity=$request->searchCity;
         header('Content-Type: application/json; charset=utf-8');
-        //$data = ["apiKey" => "9911c50e77acd5aeafaeba1af3a719d3", "modelName" => "InternetDocument", "calledMethod" => "getDocumentList", "methodProperties" => ["DateTimeFrom" => "21.04.2021", "DateTimeTo" => "28.04.2021", "Page" => "1", "GetFullList" => "0"]];
+        //$data = ["apiKey" => "", "modelName" => "InternetDocument", "calledMethod" => "getDocumentList", "methodProperties" => ["DateTimeFrom" => "21.04.2021", "DateTimeTo" => "28.04.2021", "Page" => "1", "GetFullList" => "0"]];
         //1 - Идентификатор города КИЕВ
-        $data = ["apiKey" => "9911c50e77acd5aeafaeba1af3a719d3", "modelName" => "Address", "calledMethod" => "getCities",
+        $data = ["apiKey" => "", "modelName" => "Address", "calledMethod" => "getCities",
     "methodProperties" => [
         "Page" => "1",
         "FindByString" => $searchCity
@@ -298,9 +298,9 @@ class NovaposhtaController extends Controller
         $cityRef=$request->cityRef;
         $warehouseNumber=$request->warehouseNumber;
         header('Content-Type: application/json; charset=utf-8');
-        //$data = ["apiKey" => "9911c50e77acd5aeafaeba1af3a719d3", "modelName" => "InternetDocument", "calledMethod" => "getDocumentList", "methodProperties" => ["DateTimeFrom" => "21.04.2021", "DateTimeTo" => "28.04.2021", "Page" => "1", "GetFullList" => "0"]];
+        //$data = ["apiKey" => "", "modelName" => "InternetDocument", "calledMethod" => "getDocumentList", "methodProperties" => ["DateTimeFrom" => "21.04.2021", "DateTimeTo" => "28.04.2021", "Page" => "1", "GetFullList" => "0"]];
         //1 - Идентификатор города КИЕВ
-        $data = ["apiKey" => "9911c50e77acd5aeafaeba1af3a719d3", "modelName" => "AddressGeneral", "calledMethod" => "getWarehouses",
+        $data = ["apiKey" => "", "modelName" => "AddressGeneral", "calledMethod" => "getWarehouses",
     "methodProperties" => [
         "Language" => "ru",
         "CityRef" => $cityRef,
