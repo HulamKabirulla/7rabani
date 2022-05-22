@@ -1,5 +1,5 @@
 # 7rabani
-It is my own internet shop in Ukraine. I created it for myself with such technologies: Php + laravel framework, mysql, ajax, jquery, javascript, json
+It is internet shop in Ukraine. I created it with such technologies: Php + laravel framework, mysql, ajax, jquery, javascript, json
 
 This web site has an integration with NOVA POSHTA API. Nova poshta is a biggest delivery service wich works in all Ukraine. So i can create and controll tracking via this API in my site
 
